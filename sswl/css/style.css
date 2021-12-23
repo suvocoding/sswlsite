@@ -1,0 +1,365 @@
+/*reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*utility class */
+
+:root {
+  --primary_yellow: #f3b340;
+  --primary_blue: #100b5d;
+  --primary_white: #f2f1f0;
+  --primary_skyblue: #026c82;
+  --primary_lightred: #ff4f4f;
+  --primary_red: #ed1566;
+  --primary_gray: #e7e7e4;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(/res/BrandonGrotesque-Regular);
+}
+@font-face {
+  font-family: Avenir_LT_35_Light;
+  src: url(/res/Avenir_LT_35_Light.ttf);
+}
+
+/*heading-paragraph-buttons */
+.lead {
+  font-size: 16px;
+  color: #555555;
+  font-weight: normal;
+  letter-spacing: 3;
+  line-height: 24px;
+  padding: 2rem;
+  font-family: "Avenir_LT_35_Light";
+  text-align: justify;
+}
+.lead-small {
+  font-family: "BrandonGrotesque-Regular";
+  font-size: 18px;
+  letter-spacing: 3;
+}
+.lead-medium {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 300px;
+  font-family: "BrandonGrotesque-Regular";
+}
+.lead-big {
+  font-family: "BrandonGrotesque-Regular";
+}
+
+.heading-medium {
+  font-family: "BrandonGrotesque-Regular";
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+  color: white;
+}
+
+/* Slider stars here */
+
+#slider {
+  position: relative;
+
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary_yellow);
+}
+.slider__container {
+  padding-top: 40px;
+}
+.slider__container .Slides img {
+  display: block;
+  object-fit: cover;
+  max-width: 75%;
+  margin: 100px auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 30%;
+  width: auto;
+  margin-top: 10rem;
+  background-color: white;
+  opacity: 0.2;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+/* Caption text 
+
+      .blog-slider__text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+*/
+/* Number text (1/3 etc) 
+
+      .blog-slider__numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.package_continer {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  font-family: "BrandonGrotesque-Regular";
+}
+.package {
+  width: 320px;
+  height: 300px;
+  background: var(--primary_gray);
+  margin: 5px;
+  box-shadow: 6px 4px grey;
+}
+
+.package div {
+  width: 280px;
+  height: 260px;
+  border: 5px solid white;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary_skyblue);
+}
+.package:nth-child(2) {
+  margin-top: 70px;
+}
+/* Slider end here */
+
+.package p a {
+  text-decoration: none;
+  color: var(--primary_skyblue);
+  cursor: pointer;
+}
+#about {
+  margin: 2rem 0 2rem 0;
+  padding: 2rem 10rem;
+}
+#about .lead-medium {
+  text-align: center;
+  color: var(--primary_red);
+  font-size: 50px;
+}
+
+#skills {
+  max-width: 100%;
+  max-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+#skills .lead {
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+  color: var(--primary_red);
+}
+#skills img {
+  display: block;
+  max-width: 65%;
+  margin: 0 auto;
+}
+#customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-top: 10rem !important;
+}
+#customer p {
+  font-size: 50px;
+  color: var(--primary_red);
+  font-family: "BrandonGrotesque-Regular";
+}
+#customer div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--primary_skyblue);
+  color: white;
+}
+
+#customer div a {
+  font-size: 24px;
+  font-family: "Avenir_LT_35_Light";
+  text-decoration: none;
+  color: white;
+}
+#customer div:hover {
+  background: var(--primary_red);
+}
+
+#get-in-touch {
+  margin: 0;
+  padding: 0;
+  display: column;
+  justify-content: space-between;
+  width: 60vw;
+  height: 80vh;
+  margin: 0 auto;
+  background: var(--primary_lightred);
+}
+#get-in-touch div {
+  display: flex;
+  justify-content: center;
+}
+#get-in-touch div div:nth-child(1) {
+  width: 35vw;
+  height: 60vh;
+  background: var(--primary_yellow);
+}
+#get-in-touch div div:nth-child(2) {
+  width: 35vw;
+  height: 60vh;
+  background: var(--primary_skyblue);
+}
+#get-in-touch div p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+#get-in-touch div div img {
+  display: block;
+}
+#get-in-touch div div {
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#get-in-touch div div p {
+  color: var(--primary_skyblue);
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--primary_blue);
+}
+
+textarea:focus {
+  outline: none;
+}
+input[type="text"],
+[type="email"] {
+  max-width: 70%;
+  max-height: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+textarea {
+  margin: 5px;
+  border-radius: 2px;
+}
+
+#submit_button {
+  margin: 0px auto;
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background: var(--primary_gray);
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+input::placeholder {
+  margin: 5px;
+}
+
+#submit_button:hover {
+  background: var(--primary_yellow);
+  color: white;
+}
+#submit_button i p {
+  display: inline;
+  font-size: 20px !important;
+  margin: 0px !important;
+  cursor: pointer;
+}
+#mobile-package {
+  display: none;
+}
