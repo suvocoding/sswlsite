@@ -1,0 +1,105 @@
+@media screen and (max-width: 1040px) {
+  #about {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #about .lead-medium {
+    font-size: 25px;
+  }
+  #mobile-package {
+    display: block;
+  }
+
+  #customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 10rem !important;
+  }
+  #customer p {
+    font-size: 25px !important;
+  }
+  #customer div {
+    width: 250px !important;
+    height: 30px !important;
+  }
+
+  #customer div a {
+    font-size: 18px !important;
+  }
+  #get-in-touch {
+    width: 100vw !important;
+  }
+  #address {
+    background: var(--primary_lightred);
+  }
+  #get-in-touch div {
+    flex-direction: column !important;
+  }
+  #get-in-touch div div:nth-child(1) {
+    width: 100% !important;
+  }
+  #get-in-touch div div:nth-child(2) {
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  form {
+    max-width: 80% !important;
+  }
+
+  input[type="text"],
+  [type="email"] {
+    max-width: 100% !important;
+    max-height: 40px !important;
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+
+  textarea {
+    margin: 5px !important;
+    padding: 5px !important;
+    max-width: 100% !important;
+    max-height: 60% !important;
+  }
+
+  #submit_button {
+    width: 100px !important;
+    height: 40px !important;
+  }
+  input::placeholder {
+    margin: 5px;
+  }
+
+  #submit_button i p {
+    font-size: 20px !important;
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #submit_button {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    max-width: 80px !important;
+    max-height: 30px !important;
+  }
+  .only-for-mobile {
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  #mobile-package {
+    display: block;
+  }
+  .fa {
+    display: none !important;
+  }
+  #skills {
+    max-height: 20vh !important;
+  }
+}
