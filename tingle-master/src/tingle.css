@@ -191,7 +191,7 @@
     width: 100%;
   }
   .tingle-modal {
-    background: url("/res/new_year") no-repeat;
+    background: url("/res/new_year.png") no-repeat;
     background-size: 600px 400px;
 
     opacity: 1;
