@@ -16,6 +16,8 @@
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   background: url("/res/new_year.png") no-repeat center center;
+    background-size: auto;
+
   opacity: 0;
   cursor: pointer;
 }
