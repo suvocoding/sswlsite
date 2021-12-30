@@ -15,7 +15,7 @@
   align-items: center;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  background: url("/res/ott_bannar.webp") no-repeat center center;
+  background: url("/res/new_year.png") no-repeat center center;
   opacity: 0;
   cursor: pointer;
 }
