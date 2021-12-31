@@ -101,7 +101,7 @@
   #mobile-package {
     display: block;
   }
-  .fa {
+ .hide-on {
     display: none !important;
   }
   #skills {
