@@ -16,10 +16,15 @@
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   background: url("/res/modal_image.webp") no-repeat center center;
-    background-size:60vw 50vh;
+    background-size:contain;
 
   opacity: 0;
   cursor: pointer;
+}
+img{
+ 
+  width:50%;
+  
 }
 
 @supports (backdrop-filter: blur(12px)) {
