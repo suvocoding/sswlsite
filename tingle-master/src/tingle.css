@@ -15,7 +15,7 @@
   align-items: center;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  background: url("/res/new_year.png") no-repeat center center;
+  background: url("/res/modal_image.webp") no-repeat center center;
     background-size: contain;
 
   opacity: 0;
