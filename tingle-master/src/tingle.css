@@ -16,16 +16,12 @@
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   background: url("/res/modal_image.webp") no-repeat center center;
-    background-size:contain;
+  background-size:contain !important;
 
   opacity: 0;
   cursor: pointer;
 }
-img{
- 
-  width:50%;
-  
-}
+
 
 @supports (backdrop-filter: blur(12px)) {
   .tingle-modal {
