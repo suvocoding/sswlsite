@@ -192,7 +192,7 @@
   }
   .tingle-modal {
     background: url("/res/modal_image.webp") no-repeat;
-    background-size: 600px 400px;
+    background-size:50vw 50vhx;
 
     opacity: 1;
     cursor: pointer;
